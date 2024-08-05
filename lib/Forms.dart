@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:forms_design/Form3.dart';
+import 'package:get/get.dart';
 
 class FormsDesign extends StatefulWidget {
   const FormsDesign({super.key});
@@ -112,21 +114,46 @@ class _FormsDesignState extends State<FormsDesign> {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(20.0),
-                      child: Container(
-                        width: 200,
-                        height: 200,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(12),
-                          color: Colors.white54,
-                          boxShadow: [
-                            BoxShadow(
-                              color:
-                                  Colors.black.withOpacity(0.5), // Shadow color
-                              spreadRadius: 4, // Shadow spread radius
-                              blurRadius: 4, // Shadow blur radius
-                              offset: Offset(7, 10), // Shadow offset
-                            ),
-                          ],
+                      child: GestureDetector(
+                        onTap: () {
+                          Get.to(Form3(), transition: Transition.size);
+                        },
+                        child: Container(
+                          width: 200,
+                          height: 200,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black
+                                    .withOpacity(0.5), // Shadow color
+                                spreadRadius: 4, // Shadow spread radius
+                                blurRadius: 4, // Shadow blur radius
+                                offset: Offset(7, 10), // Shadow offset
+                              ),
+                            ],
+                          ),
+                          child: Center(
+                              child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                'MAIN',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 30,
+                                    color: Colors.black),
+                              ),
+                              Text(
+                                'DESIGN',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 30,
+                                    color: Colors.black),
+                              ),
+                            ],
+                          )),
                         ),
                       ),
                     ),
