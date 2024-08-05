@@ -15,7 +15,7 @@ class _FormsDesignState extends State<FormsDesign> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       // Scroll to the third container (index 2)
-      initScroll.jumpTo(320.0); // Adjust the offset as needed
+      initScroll.jumpTo(520.0); // Adjust the offset as needed
     });
   }
 
@@ -38,57 +38,122 @@ class _FormsDesignState extends State<FormsDesign> {
               child: Row(
                 children: [
                   SizedBox(
-                    width: 80,
+                    width: 60,
                   ),
-                  Container(
-                    width: 200,
-                    height: 200,
-                    decoration: BoxDecoration(
+                  Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Container(
+                      width: 200,
+                      height: 200,
+                      decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
-                        color: Colors.black),
+                        color: Colors.black,
+                        boxShadow: [
+                          BoxShadow(
+                            color:
+                                Colors.black.withOpacity(0.5), // Shadow color
+                            spreadRadius: 4, // Shadow spread radius
+                            blurRadius: 4, // Shadow blur radius
+                            offset: Offset(7, 10), // Shadow offset
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                   SizedBox(
-                    width: 80,
+                    width: 20,
                   ),
-                  Container(
-                    width: 200,
-                    height: 200,
-                    decoration: BoxDecoration(
+                  Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Container(
+                      width: 200,
+                      height: 200,
+                      decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
-                        color: Colors.blue),
+                        color: Colors.blue,
+                        boxShadow: [
+                          BoxShadow(
+                            color:
+                                Colors.black.withOpacity(0.5), // Shadow color
+                            spreadRadius: 4, // Shadow spread radius
+                            blurRadius: 4, // Shadow blur radius
+                            offset: Offset(7, 10), // Shadow offset
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                   SizedBox(
-                    width: 80,
+                    width: 20,
                   ),
-                  Container(
-                    width: 200,
-                    height: 200,
-                    decoration: BoxDecoration(
+                  Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Container(
+                      width: 200,
+                      height: 200,
+                      decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
-                        color: Colors.pink),
+                        color: Colors.pink,
+                        boxShadow: [
+                          BoxShadow(
+                            color:
+                                Colors.black.withOpacity(0.5), // Shadow color
+                            spreadRadius: 4, // Shadow spread radius
+                            blurRadius: 4, // Shadow blur radius
+                            offset: Offset(7, 10), // Shadow offset
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                   SizedBox(
-                    width: 80,
+                    width: 20,
                   ),
-                  Container(
-                    width: 200,
-                    height: 200,
-                    decoration: BoxDecoration(
+                  Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Container(
+                      width: 200,
+                      height: 200,
+                      decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
-                        color: Colors.red),
+                        color: Colors.red,
+                        boxShadow: [
+                          BoxShadow(
+                            color:
+                                Colors.black.withOpacity(0.5), // Shadow color
+                            spreadRadius: 4, // Shadow spread radius
+                            blurRadius: 4, // Shadow blur radius
+                            offset: Offset(7, 10), // Shadow offset
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                   SizedBox(
-                    width: 80,
+                    width: 20,
                   ),
-                  Container(
-                    width: 200,
-                    height: 200,
-                    decoration: BoxDecoration(
+                  Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Container(
+                      width: 200,
+                      height: 200,
+                      decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
-                        color: Colors.yellow),
+                        color: Colors.yellow,
+                        boxShadow: [
+                          BoxShadow(
+                            color:
+                                Colors.black.withOpacity(0.5), // Shadow color
+                            spreadRadius: 4, // Shadow spread radius
+                            blurRadius: 4, // Shadow blur radius
+                            offset: Offset(7, 10), // Shadow offset
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                   SizedBox(
-                    width: 80,
+                    width: 60,
                   ),
                 ],
               ),
