@@ -11,12 +11,7 @@ class Form3 extends StatefulWidget {
 }
 
 class _Form3State extends State<Form3> {
-  var _fName = TextEditingController().obs;
-  var _lName = TextEditingController().obs;
-  var _PH = TextEditingController().obs;
-  var _Email = TextEditingController().obs;
-  var _Address = TextEditingController().obs;
-  var _CNIC = TextEditingController().obs;
+  final Form3 form3data = Get.put(Form3());
 
   String? selectedValue;
 
@@ -61,7 +56,7 @@ class _Form3State extends State<Form3> {
               Flexible(
                 child: Obx(
                   () => TextField(
-                    controller: _fName.value,
+                    controller: form3data.fName.value,
                     decoration: InputDecoration(
                       label: Text('First Name'),
                       labelStyle:
