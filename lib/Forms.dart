@@ -116,7 +116,9 @@ class _FormsDesignState extends State<FormsDesign> {
                       padding: const EdgeInsets.all(20.0),
                       child: GestureDetector(
                         onTap: () {
-                          Get.to(Form3(), transition: Transition.size);
+                          Get.to(Form3(),
+                              transition: Transition.size,
+                              duration: Duration(milliseconds: 500));
                         },
                         child: Container(
                           width: 200,
