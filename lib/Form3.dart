@@ -35,7 +35,7 @@ class _Form3State extends State<Form3> {
   ];
 
   String? _selectedCity;
-  List<String> City = ['Lahore', 'Faisalabad', 'Gojra'];
+  List<String> City = ['Lahore', 'Faisalabad', 'Gojra', 'Sialkot'];
 
   @override
   Widget build(BuildContext context) {
